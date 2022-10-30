@@ -2,23 +2,41 @@
 
 This library is made with angular version 14.2.0.
 
-## Code scaffolding
+## Getting started
 
-Run `ng generate component component-name --project Ng-Timeline` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project Ng-Timeline`.
-> Note: Don't forget to add `--project Ng-Timeline` or else it will be added to the default project in your `angular.json` file. 
+1. run `npm install --save angular-mgl-timeline`
+2. in your app module:
 
-## Build
+`...
+import {NgTimelineModule} from "ng-timeline.module";
 
-Run `ng build Ng-Timeline` to build the project. The build artifacts will be stored in the `dist/` directory.
+@NgModule({
+...
+imports: [
+...
+BrowserModule,
+NgTimelineModule
+]
+})
+export class AppModule { }`
 
-## Publishing
+## Usage
 
-After building your library with `ng build Ng-Timeline`, go to the dist folder `cd dist/ng-timeline` and run `npm publish`.
+#### Minimal usage
 
-## Running unit tests
+##### `<ng-horizontal-timeline-slider [status]="status"></ng-horizontal-timeline-slider>`
 
-Run `ng test Ng-Timeline` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Inputs
+| Property |      Type      |   default | impact                                 |
+|----------|:--------------:|----------:|----------------------------------------|
+| status   |    string[]    | undefined | this will be items of the timeline     |
+| height   |     number     |       500 | height of the timeline                 |
+| size     | 'sm'/'md'/'lg' |        lg | size of the timeline                   |
+| topBottomPosition     |     number     |      -150 | upper and lower position of the status |
+| leftPosition     |     number     |       -40 | left position of the status            |
+| widthOfPosition     |     number     |        50 | width of the status                    |
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## License
+MIT License (c) Markus Glutting
