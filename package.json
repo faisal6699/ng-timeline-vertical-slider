@@ -1,0 +1,20 @@
+{
+  "name": "ng-horizontal-timeline-slider",
+  "version": "0.1",
+  "description": "A simple horizontal slider which can move forward and backward. Style can be updated as per need",
+  "author": "Faisal Ahmed",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/faisal6699/horizontal-timeline-slider.git"
+  },
+  "homepage": "https://github.com/faisal6699/horizontal-timeline-slider",
+  "keywords": ["angular", "javascript", "typescript", "timeline", "slider", "horizontal-slider", "timeline-slider", "faisal ahmed", "timeline-horizontal-slider"],
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^14.2.0",
+    "@angular/core": "^14.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
